@@ -53,7 +53,7 @@ app.get("/api/authorize", verifyAccessToken, (req, res) => {
   });
 });
 
-app.use(verifyAccessToken);
+//app.use(verifyAccessToken);
 app.use("/api/regis", regisRouter);
 app.use("/api/attend", attendRouter);
 app.use("/api/security", secureRouter);
